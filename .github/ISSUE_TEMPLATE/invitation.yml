@@ -1,7 +1,8 @@
-name: Invitation to the SidHacks Community GitHub Organization
+name: Invitation to the SidHacks Community GitHub Organization 🚀
 description: I am willing to become a part of this amazing community.
-title: "Looking forward to get involved and contribute to the community"
+title: "Looking forward to get involved and contribute to the community 🎉"
 labels: [invitation]
+assignees: "siddharthdayalwal"
 body:
   - type: input
     id: first_name
@@ -21,16 +22,17 @@ body:
     id: discordname
     attributes:
       label: Discord Username (if applicable)
+      description: Your username is normally something like, "Siddharth Dayalwal" It also comes with an identifier like "#9711". We need both, so "Siddharth Dayalwal#9711". 
       placeholder: Insert your Discord username here
     validations:
       required: false
   - type: textarea
     id: motive
     attributes:
-      label: Let us understand your motive
-      description: How did you came to know about SidHacks? Why do you want to join the community? What are you looking forward to?
+      label: Let us understand your motive.
+      description: How did you come to know about SidHacks? Why do you want to join the community? What are the ways you could contribute to the community?
     validations:
-      required: false
+      required: true
   - type: markdown
     attributes:
       value: |
