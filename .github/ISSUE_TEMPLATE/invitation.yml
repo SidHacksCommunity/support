@@ -2,7 +2,6 @@ name: Invitation to the SidHacks Community GitHub Organization 🚀
 description: I am willing to become a part of this amazing community.
 title: "Looking forward to get involved and contribute to the community 🎉"
 labels: [invitation]
-assignees: "siddharthdayalwal"
 body:
   - type: input
     id: first_name
