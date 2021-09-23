@@ -12,6 +12,6 @@ jobs:
           organization: SidHacksCommunity
           label: invite me to the organisation
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          comment: '<b>Invitation sent for the GitHub Organisation. Welcome to the CodXCrypt community 🎉</b>'
+          comment: '<b>Invitation sent for the GitHub Organisation. Welcome to the Sid-Hacks community 🎉</b>'
         env:
           INVITE_TOKEN: ${{ secrets.INVITE_TOKEN }}
