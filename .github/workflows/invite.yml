@@ -1,0 +1,38 @@
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  automate_invite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invite on label
+        uses: vj-abigo/invite-on-label@v1.2
+        with:
+          organization: SidHacksCommunity
+          label: invite me to the organisation
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          comment: |
+            '
+
+            ![](https://camo.githubusercontent.com/ba949d9c47088b7f922c0250a04ff9cba5e5e31bb8fe86bd9e5f36906873180c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4c7259364f69494348533154575a70476b662f67697068792e676966)
+
+            Hey there! 👋
+
+            Thanks for requesting an invite! Welcome to SidHacks Community 🎉
+            Before going ahead, I would want you to complete the below To-Do list.
+
+            ## Your To-Do List ✔️
+
+            - Accept the invitation sent to you via mail.
+            - Change the appearance of this organization to "Public" from the people list [here](https://github.com/orgs/SidHacksCommunity/people/).
+            - Join our Discord Server [here](https://discord.gg/gPyR9Q9n8M).
+
+            - Accept the Rules from `#📓〡rules` channel.
+            - Introduce yourself to our community in `👋〡introduction` channel.
+            - Feel free to share your excitement on socials with `#SidHacksCommunity`. You can also tag me `@siddharth_hacks`.
+
+            Looking forward to interacting with you in our community! Welcome once again! 🤓
+'
+        env:
+          INVITE_TOKEN: ${{ secrets.INVITE_TOKEN }}
