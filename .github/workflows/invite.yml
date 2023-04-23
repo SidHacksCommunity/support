@@ -33,6 +33,6 @@ jobs:
             - Feel free to share your excitement on socials with `#SidHacksCommunity`. You can also tag me `@siddharth_hacks`.
 
             Looking forward to interacting with you in our community! Welcome once again! 🤓
-'
+            '
         env:
           INVITE_TOKEN: ${{ secrets.INVITE_TOKEN }}
